@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <span>Carlos Eduardo Soares</span>
+    <span class="example-spacer"></span>
+    <button *ngIf="logado" mat-button routerLink="/home">Home</button>
+    <button *ngIf="logado" mat-button (click)="sair()">Sair</button>
+</mat-toolbar>
+
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
+
+<div class="footer">
+    <span>&copy; 2025 Carlos Eduardo Soares</span>
+</div>
